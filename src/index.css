@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F4F6FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+
+form {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.inputs-form input {
+    padding: 5px;
+}
+
+.inputs-form label {
+    font-weight: bold;
+}
+
+.inputs-form input:focus {
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+}
+
+.radio-label {
+    margin-right: 5px;
+}
+
+.radio-group-label {
+    font-weight: bold;
+}
+
+.select-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-field select {
+    padding: 10px;
+    background-color: #464647;
+    color: white;
+}
+
+.select-field select:focus {
+    outline: none;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 5px;
+}
+
+textarea:focus {
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.buttons button {
+    background-color: hsl(229, 63%, 59%);
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.buttons button:hover {
+    background-color: hsl(229, 63%, 75%);
+}
+
+@media (max-width: 450px) {
+    form {
+        width: 100%;
+    }
+}
